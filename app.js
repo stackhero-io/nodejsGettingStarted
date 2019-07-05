@@ -15,8 +15,8 @@ const server = app.listen(port);
 console.log('🎉 The app has just start!');
 
 // Handle termination signal
-// When you'll push your code to Stackhero, we'll send a termination signal (SIGTERM).
-// The goal is to let you close cleanly connections from Express, connections to databases etc...
+// When you will push your new code to Stackhero, we will send a termination signal (SIGTERM) to your running app.
+// The goal is to let your running app close connections properly from Express, connections to databases etc...
 process.on('SIGTERM', () => {
   // You'll see this log directly on your Stackhero's console
   console.info('😯 SIGTERM signal received.');
